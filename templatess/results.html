@@ -1,0 +1,10 @@
+<h1>
+    you entered {{count}} words
+</h1>
+<a href=" {% url 'home' %}"> go home :)</a>
+<br/>
+    {% for words, reps in dictionaryitems %}
+    {{words}}=
+    {{reps}}
+    <br/>
+    {% endfor %}
